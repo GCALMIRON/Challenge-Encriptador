@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <main>
+            
+            <div class="input-section">
+                <header>
+                    <div class="logo">
+                        <img src="logo.png" alt="Logo">
+                    </div>
+                </header>
+                <label for="input-text">Ingrese el texto aquí</label>
+                <textarea id="input-text"></textarea>
+                <div class="note">
+                    <p>⚠️ Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="buttons">
+                    <button class="encriptar-button" onclick="encriptar()">Encriptar</button>
+                    <button class="desencriptar-button" onclick="desencriptar()">Desencriptar</button>
+                </div>
+            </div>
+            <div class="output-section">
+                <div class="elementos" id="elementos-iniciales">
+                    <img src="muneco.png" alt="muñeco">
+                    <p class="output-mensaje">Ningún mensaje fue encontrado</p>
+                    <p class="output-subtexto">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <p class="output-mensaje" id="output-mensaje"></p>
+                <button id="copiar-texto" class="oculto">Copiar</button>
+            </div>
+        </main>
+        <footer>
+            <p class="datos">Gerardo Almirón - 2024 - ONE Group #7</p>
+        </footer>
+    </div>
+</body>
+
+<script src="scripts.js"></script>
+</html>
