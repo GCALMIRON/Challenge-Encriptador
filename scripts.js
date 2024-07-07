@@ -9,7 +9,7 @@ function encriptar() {
     outputMessage.textContent = "";
 
     const encriptado = inputText
-        .replace(/a/g, 'ai')
+        .replace(/a/g, 'aw')
         .replace(/e/g, 'enter')
         .replace(/i/g, 'imes')
         .replace(/o/g, 'ober')
@@ -33,7 +33,7 @@ function desencriptar() {
     outputMessage.textContent = "";
 
     const desencriptado = inputText
-        .replace(/ai/g, 'a')
+        .replace(/aw/g, 'a')
         .replace(/enter/g, 'e')
         .replace(/imes/g, 'i')
         .replace(/ober/g, 'o')
